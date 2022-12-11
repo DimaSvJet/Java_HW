@@ -8,6 +8,7 @@ public class Home_Work_8 {
             if ((numberShuttle + 1) != 4 & (numberShuttle + 1) != 9) {
                 numberShuttle++;
             }
+            // Exception handling
             else numberShuttle += 2;
             System.out.println(i + ") " + "№ шатла: "+numberShuttle);
         }
