@@ -2,16 +2,16 @@ public class Home_Work_8 {
     public static void main(String[] args) {
 
         int shuttle = 100;
-        int numberShuttle = 0;
+        int numberShuttle = 1;
+        String numberStrShuttle;
 
         for (int i = 1; i <= shuttle; i++) {
-            if ((numberShuttle + 1) != 4 & (numberShuttle + 1) != 9) {
-                numberShuttle++;
-            }
-            // Exception handling
-            else numberShuttle += 2;
-            System.out.println(i + ") " + "№ шатла: "+numberShuttle);
+            System.out.println(i + ") " + "№ шатла: " + numberShuttle);
+            do {numberShuttle++; numberStrShuttle = Integer.toString(numberShuttle);
+                } while ((numberStrShuttle.indexOf('4') >= 0) || (numberStrShuttle.indexOf('9') >= 0));
+        }
+
         }
 
     }
-}
+
