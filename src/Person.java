@@ -1,11 +1,30 @@
 public class Person {
+    String firstName;
+    String lastName;
+    int age;
+    String gender;
+    String address;
 
-
-    public static String personInfo(String name, String lastName, String city, String mob){
-       String personInform = "Зателефонувати громадянинові " + name.trim() + " " + lastName.trim() + " із міста " +
-                city.trim() + " можна за номером: " + Long.parseLong(mob.trim());
-        return personInform;
+    public Person(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
 
+    public Person(String firstName, String gender) {
+        this.firstName = firstName;
+        this.gender = gender;
+    }
 
+    public Person(String firstName, String lastName, int age, String gender, String address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+        this.address = address;
+    }
+
+    public Person() {
+    }
 }
+
