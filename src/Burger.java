@@ -17,20 +17,20 @@ public class Burger {
      }
 
      public Burger(String nameBurger, int bun, int meat, int cheese, int greens) {
-          this.nameBurger = "Бургер дієтичний ";
-          this.bun = 1;
-          this.meat = 1;
-          this.cheese = 1;
-          this.greens = 1;
+          this.nameBurger = nameBurger;
+          this.bun = bun;
+          this.meat = meat;
+          this.cheese = cheese;
+          this.greens = greens;
      }
 
      public Burger(String nameBurger, int bun, int meat, int cheese, int greens, int mayonnaise) {
-          this.nameBurger = "Бургер з подвійним м'ясом ";
-          this.bun = 1;
-          this.meat = 2;
-          this.cheese = 1;
-          this.greens = 1;
-          this.mayonnaise = 1;
+          this.nameBurger = nameBurger;
+          this.bun = bun;
+          this.meat = meat;
+          this.cheese = cheese;
+          this.greens = greens;
+          this.mayonnaise = mayonnaise;
      }
 
      @Override
