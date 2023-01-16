@@ -30,20 +30,22 @@ public class HomeWork17 {
         client4.printAccountInfo();
         client5.printAccountInfo();
 
-        client3.lastName = "Segalova";
-        client3.pressureSystolic = 80;
-        client3.pressureDiastolic = 110;
-        client3.weight = 76;
-        client3.stepsByDay = 5500;
+        client3.newLife("Segalova", 70,80,115,8000);
+
+
+
+        //client3.lastName = "Segalova";
+        //client3.pressureSystolic = 80;
+        //client3.pressureDiastolic = 110;
+        //client3.weight = 76;
+        //client3.stepsByDay = 5500;
 
         client3.printAccountInfo();
 
-        client5.checkYourLife(66,85,115,7000);
+        client5.checkYourLife("Volkova",66,85,115,7000);
         client5.printAccountInfo();
 
-        client5.yourNewTeleMail("Bakhareva","+380665462389","Kristi95@gmail.com"  );
 
-        client5.printAccountInfo();
 
 
 

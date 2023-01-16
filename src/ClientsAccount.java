@@ -1,18 +1,18 @@
 
 public class ClientsAccount {
 
-        private String firstName;
-        public String lastName;
-        private String eMail;
-        private String mobTel;
-        private int dayBirthday;
-        private int monthBirthday;
-        private int yearBirthday;
-        public int weight;
-        public int pressureSystolic;
-        public int pressureDiastolic;
-        public int stepsByDay;
-        private int age;
+        final String firstName;
+        private String lastName;
+        final String eMail;
+        final String mobTel;
+        final int dayBirthday;
+        final int monthBirthday;
+        final int yearBirthday;
+        private int weight;
+        private int pressureSystolic;
+        private int pressureDiastolic;
+        private int stepsByDay;
+        final int age;
 
 
 
@@ -33,8 +33,13 @@ public class ClientsAccount {
                 this.age = 2020-yearBirthday;
         }
 
+
         public String getFirstName() {
                 return firstName;
+        }
+
+        public String getLastName() {
+                return lastName;
         }
 
         public String geteMail() {
@@ -43,10 +48,6 @@ public class ClientsAccount {
 
         public String getMobTel() {
                 return mobTel;
-        }
-
-        public int getAge() {
-                return age;
         }
 
         public int getDayBirthday() {
@@ -61,28 +62,61 @@ public class ClientsAccount {
                 return yearBirthday;
         }
 
-        public void checkYourLife(int weight, int pressureSystolic,
+        public int getWeight() {
+                return weight;
+        }
+
+        public int getPressureSystolic() {
+                return pressureSystolic;
+        }
+
+        public int getPressureDiastolic() {
+                return pressureDiastolic;
+        }
+
+        public int getStepsByDay() {
+                return stepsByDay;
+        }
+
+        public int getAge() {
+                return age;
+        }
+
+        private void setLastName(String lastName) {
+                this.lastName = lastName;
+        }
+
+        private void setWeight(int weight) {
+                this.weight = weight;
+        }
+
+        private void setPressureSystolic(int pressureSystolic) {
+                this.pressureSystolic = pressureSystolic;
+        }
+
+        private void setPressureDiastolic(int pressureDiastolic) {
+                this.pressureDiastolic = pressureDiastolic;
+        }
+
+        private void setStepsByDay(int stepsByDay) {
+                this.stepsByDay = stepsByDay;
+        }
+
+        public void newLife(String lastName, int weight, int pressureSystolic, int pressureDiastolic, int stepsByDay) {
+                setLastName(lastName);
+                setWeight(weight);
+                setPressureSystolic(pressureSystolic);
+                setPressureDiastolic(pressureDiastolic);
+                setStepsByDay(stepsByDay);
+        }
+
+        public void checkYourLife(String lastName, int weight, int pressureSystolic,
                                   int pressureDiastolic, int stepsByDay) {
+                this.lastName = lastName;
                 this.weight = weight;
                 this.pressureSystolic = pressureSystolic;
                 this.pressureDiastolic = pressureDiastolic;
                 this.stepsByDay = stepsByDay;
-        }
-
-        private void seteMail(String eMail) {
-                this.eMail = eMail;
-        }
-
-        private void setMobTel(String mobTel) {
-                this.mobTel = mobTel;
-        }
-
-        public void yourNewTeleMail(String lastNameCheck,String mobTel, String eMail){
-                if (lastNameCheck.equals(lastName) == true) {
-                setMobTel(mobTel); seteMail(eMail);
-                }
-                else System.out.println("Error");
-
         }
 
         public void printAccountInfo() {
