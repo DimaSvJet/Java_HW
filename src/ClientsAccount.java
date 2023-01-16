@@ -110,15 +110,6 @@ public class ClientsAccount {
                 setStepsByDay(stepsByDay);
         }
 
-        public void checkYourLife(String lastName, int weight, int pressureSystolic,
-                                  int pressureDiastolic, int stepsByDay) {
-                this.lastName = lastName;
-                this.weight = weight;
-                this.pressureSystolic = pressureSystolic;
-                this.pressureDiastolic = pressureDiastolic;
-                this.stepsByDay = stepsByDay;
-        }
-
         public void printAccountInfo() {
                 System.out.println(toString());
         }
