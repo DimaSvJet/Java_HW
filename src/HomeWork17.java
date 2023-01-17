@@ -30,21 +30,23 @@ public class HomeWork17 {
         client4.printAccountInfo();
         client5.printAccountInfo();
 
-        client3.newLife("Segalova", 70,80,115,8000);
+        client3.setLastName("Segalova");
+        client3.setWeight(70);
+        client3.setPressureSystolic(80);
+        client3.setPressureDiastolic(115);
+        client3.setStepsByDay(8000);
 
         client3.printAccountInfo();
 
-        client5.newLife("Volkova",66,85,115,7000);
+        client5.setLastName("Volkova");
+        client5.setWeight(66);
+        client5.setPressureSystolic(85);
+        client5.setPressureDiastolic(115);
+        client5.setStepsByDay(7000);
+
         client5.printAccountInfo();
 
-
-
-
-
-
     }
-
-
 
     }
 

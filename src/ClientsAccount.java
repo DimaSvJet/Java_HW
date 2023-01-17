@@ -82,32 +82,24 @@ public class ClientsAccount {
                 return age;
         }
 
-        private void setLastName(String lastName) {
+        public void setLastName(String lastName) {
                 this.lastName = lastName;
         }
 
-        private void setWeight(int weight) {
+        public void setWeight(int weight) {
                 this.weight = weight;
         }
 
-        private void setPressureSystolic(int pressureSystolic) {
+        public void setPressureSystolic(int pressureSystolic) {
                 this.pressureSystolic = pressureSystolic;
         }
 
-        private void setPressureDiastolic(int pressureDiastolic) {
+        public void setPressureDiastolic(int pressureDiastolic) {
                 this.pressureDiastolic = pressureDiastolic;
         }
 
-        private void setStepsByDay(int stepsByDay) {
+        public void setStepsByDay(int stepsByDay) {
                 this.stepsByDay = stepsByDay;
-        }
-
-        public void newLife(String lastName, int weight, int pressureSystolic, int pressureDiastolic, int stepsByDay) {
-                setLastName(lastName);
-                setWeight(weight);
-                setPressureSystolic(pressureSystolic);
-                setPressureDiastolic(pressureDiastolic);
-                setStepsByDay(stepsByDay);
         }
 
         public void printAccountInfo() {
